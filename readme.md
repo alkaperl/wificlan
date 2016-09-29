@@ -60,6 +60,7 @@ sh start-dev.sh
 ### TODO
 * Send RSSI signal strength through API
 * Execute bash scripts on beaglebone from web button
+* Migrate from firebase to local postgres, and then to remote postgres
 
 ### Thanks
 Thank you to Derek Rushforth.
