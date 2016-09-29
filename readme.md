@@ -14,11 +14,11 @@ View live at [tag.impracticalapplications.com](http://tag.impracticalapplication
 * (Optional) 2nd wifi interface connected to the internet
 
 ### Server
-Take data gathered through airodump and POST it to an endpoint. This is a WIP.
+Deploy on an embedded device -- beaglebone, rpi, router -- and gather data through airodump and POST it to an endpoint. This is a total work in progress.
 
 ##### Usage
 
-Set your wifi interface in monitor mode. Replace `wlan0` with your interface name:
+Copy the `server` directory to your device, via `scp` or `sftp` or whatever is easiest. Set your wifi interface in monitor mode. Replace `wlan0` with your interface name:
 
 Run `setup.sh`:
 ```
@@ -42,7 +42,7 @@ sh start.sh
 
 
 ### Client
-Front end interface to display airodump data sent to the API by the `server`.
+Front end interface to display airodump data sent to the API by the `server`. Deploy somewhere publically accessible, like a digital ocean or AWS VPS, or heroku. Where ever, it just needs to support node applications. Some web hosting providers don't do that.
 
 ##### Usage
 
